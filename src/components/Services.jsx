@@ -1,21 +1,21 @@
 import React from 'react';
-import { Camera, Film, PenTool } from 'lucide-react';
+import { Camera, Film, Trophy } from 'lucide-react';
 
 const services = [
   {
-    icon: Camera,
-    title: 'Fotografia',
-    desc: 'Ritratti, eventi, prodotti e reportage. Luci, composizione e post-produzione per immagini che restano.'
-  },
-  {
     icon: Film,
-    title: 'Video Production',
-    desc: 'Dalla pre-produzione al montaggio finale. Spot, videoclip, aftermovie, documentari e contenuti social.'
+    title: 'Sport Highlights',
+    desc: 'Riprese a bordo campo e montaggi ad alta energia per match, gare e eventi live. Ritmo, tagli rapidi e color grading incisivo.'
   },
   {
-    icon: PenTool,
-    title: 'Graphic Design',
-    desc: 'Identità visiva, copertine, layout e contenuti digitali. Un design pulito, moderno e riconoscibile.'
+    icon: Camera,
+    title: 'Brand & Adv',
+    desc: 'Spot e contenuti commerciali per team, atleti e sponsor. Script, shooting plan e consegna ottimizzata per social.'
+  },
+  {
+    icon: Trophy,
+    title: 'Atleti & Team Stories',
+    desc: 'Ritratti, mini-doc e storytelling dietro le quinte: allenamenti, preparazione, mentalità vincente.'
   }
 ];
 
@@ -23,13 +23,11 @@ export default function Services() {
   return (
     <section id="servizi" className="bg-black py-20 text-white">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-10 flex items-end justify-between">
-          <div>
-            <h2 className="text-3xl font-semibold sm:text-4xl">Servizi</h2>
-            <p className="mt-2 text-white/70">
-              Un flusso completo: ideazione, produzione e consegna. Perfetto per brand e creator.
-            </p>
-          </div>
+        <div className="mb-10">
+          <h2 className="text-3xl font-semibold sm:text-4xl">Servizi</h2>
+          <p className="mt-2 text-white/70">
+            Produzioni video e foto per sport e automotive: velocità, precisione e impatto visivo.
+          </p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

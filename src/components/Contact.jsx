@@ -7,7 +7,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Nuovo progetto da ${name || 'Contatto Portfolio'}`);
+    const subject = encodeURIComponent(`Richiesta shooting sportivo — ${name || 'Contatto Portfolio'}`);
     const body = encodeURIComponent(message);
     window.location.href = `mailto:hello@portfolio.studio?subject=${subject}&body=${body}`;
   };
@@ -17,9 +17,9 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-10 grid gap-8 md:grid-cols-2 md:items-end">
           <div>
-            <h2 className="text-3xl font-semibold sm:text-4xl">Parliamo del tuo progetto</h2>
+            <h2 className="text-3xl font-semibold sm:text-4xl">Prenota il tuo shooting sportivo</h2>
             <p className="mt-2 text-white/70">
-              Raccontami obiettivi, target e mood: costruiremo insieme un visual su misura.
+              Match, gare, allenamenti o campagne adv: raccontiamo la tua performance con immagini d’impatto.
             </p>
             <div className="mt-6 space-y-3 text-white/80">
               <p className="flex items-center gap-2"><Mail size={18} /> hello@portfolio.studio</p>
@@ -47,7 +47,7 @@ export default function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                   rows={4}
                   className="w-full rounded-md border border-white/10 bg-black/40 px-3 py-2 text-white placeholder-white/40 outline-none focus:border-white/30"
-                  placeholder="Raccontami l'idea, le tempistiche e il budget"
+                  placeholder="Tipo di evento, data, location, durata, output richiesti"
                 />
               </div>
               <button type="submit" className="inline-flex w-full items-center justify-center rounded-md bg-white px-4 py-2 font-semibold text-black transition hover:bg-white/90">
